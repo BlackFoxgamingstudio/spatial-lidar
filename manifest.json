@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0.0",
+  "package_id": "PKG-023",
+  "slug": "spatial-lidar",
+  "name": "sovereign-spatial-lidar",
+  "domain": "Spatial Computing & Apple LiDAR",
+  "version": "1.0.0",
+  "status": "PRODUCTION_READY",
+  "entrypoint": "src/core.py",
+  "cli_command": "sovereign-spatial-lidar",
+  "microservice_port": 8803,
+  "n8n_webhook_path": "spatial-lidar-trigger",
+  "n8n_workflow": "n8n/workflow.json",
+  "test_suite": "tests/test_solution.py",
+  "author": "Russell Alan Powers",
+  "license": "MIT"
+}

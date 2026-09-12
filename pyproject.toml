@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sovereign-spatial-lidar"
+version = "1.0.0"
+description = "iOS Apple RoomPlan and LiDAR spatial mesh reconstruction toolkit. Ingests raw USDZ 3D room scans (`RoomScan_*.usdz`) and object scans, extracts parametric bounding boxes, and exports digital twin coordinates to SQLite/JSON."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+    {name = "Russell Alan Powers", email = "russell@sovereignbizbox.io"}
+]
+keywords = ["sovereign", "spatial computing & apple lidar", "microservice", "n8n", "automation"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries"
+]
+dependencies = []
+
+[project.scripts]
+sovereign-spatial-lidar = "src.cli:main"
